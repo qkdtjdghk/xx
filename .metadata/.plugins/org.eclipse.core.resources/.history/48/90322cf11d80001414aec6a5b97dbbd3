@@ -1,0 +1,29 @@
+package chat;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server {
+
+	ServerSocket a;
+
+	public static void main(String[] args) {
+		Thread b = new chat();
+
+	}
+
+}
+
+class chat extends Thread {
+	public void run() {
+		try {
+			ServerSocket a = new ServerSocket(2015);
+			Socket bb = a.accept();
+			System.out.println("½ÇÇà");
+
+		} catch (Exception b) {
+
+		}
+		System.out.println("bbb");
+	}
+}
